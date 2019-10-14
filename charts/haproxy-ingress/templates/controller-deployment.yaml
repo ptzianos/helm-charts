@@ -19,6 +19,7 @@ spec:
   selector:
     matchLabels:
       app: {{ template "haproxy-ingress.name" . }}
+      component: "{{ .Values.controller.name }}"
       release: {{ .Release.Name }}
   template:
     metadata:
