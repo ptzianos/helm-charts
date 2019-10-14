@@ -3,7 +3,7 @@
 all : index package
 
 index :
-	helm repo index . --url https://ptzianos.github.io/helm-charts
+	helm repo index . --url https://github.com/ptzianos/helm-charts/raw/master/
 
 package :
 	helm lint charts/haproxy-ingress/
